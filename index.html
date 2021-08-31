@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
     <script src='/index.js'></script>
+    <link rel='stylesheet' href='/style.css'>
     <title>Produt Sum Factor Calculator</title>
 </head>
 <body>
-    <div class='heading'>
-        <h1>Product Sum Factor Calculator</h1>
-        <a class='sroll-click'>Factor calculator</a>
+    <div class='table-content'>
+        <h1>Content: </h1>
+        <a class='sroll click to-Factor'>Factor calculator</a> <br>
+        <a class='sroll click to-PSF'>Product, Sum - Factor calculator</a>
     </div>
     <div class='psf'>
         <form>
+            <h3>Product, Sum - Factor Calculator</h3>
             <div class='product'>
                 <label class='product-label' for='product'>Product</label>
                 <input class='product-input' name='product' placeholder='product'>
@@ -27,16 +30,16 @@
                 <button class='submit-psf' placeholder='calculate'>Calculate</button>
             </div>
         </form>
-        <div class='answer-psf'>
+        <div class='answer-psf answer'>
             <p class='answer-psf'></p>
         </div>
     </div>
     <div class='factor'>
         <form>
-            <input class='factor-input'>
+            <input class='factor-input' placeholder='enter a number' >
             <button class='submit-factor'>Calculate</button>
         </form>
-        <div class='f-ans-place'>
+        <div class='f-ans-place answer'>
             <p class='f-ans'></p>
         </div>
     </div>
