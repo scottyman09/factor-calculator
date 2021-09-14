@@ -25,6 +25,12 @@ $(document).ready(function () {
             $('.f-ans').text("Please enter a number")
         }
     })
+    $('.to-Factor').click((e) => {
+        window.scrollTo(0, window.innerHeight / 70)
+    })
+    $('.to-PSF').click((e) => {
+        window.scrollTo(0, window.innerHeight / 10)
+    })
 })
 
 
@@ -42,4 +48,5 @@ const factors = number => Array
 function PSF(sum, product){
     var fa = factors(a)
     var fb = factors(b)
+    console.log(fa, fb)
 }
