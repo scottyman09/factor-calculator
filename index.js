@@ -5,7 +5,7 @@ $(document).ready(function () {
         var sum = parseInt($('.sum-input').val());
         var product = parseInt($('.poroduct-input').val());
         if(sum && product){
-            const result = calculate(sum, product);
+            const result = PSF(sum, product);
         } else {
             $('.answer-psf').text("Please enter sum and product")
         }
@@ -38,3 +38,8 @@ function calculate(sum, pro){
 const factors = number => Array
     .from(Array(number + 1), (_, i) => i)
     .filter(i => number % i === 0)
+
+function PSF(sum, product){
+    var fa = factors(a)
+    var fb = factors(b)
+}
